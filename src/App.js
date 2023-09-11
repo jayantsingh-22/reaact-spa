@@ -17,7 +17,7 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
-          <Route path="/welcome/new-user" element={<WelcomeNewUser />} />
+          <Route path="/new-user" element={<WelcomeNewUser />} />
         </Routes>
       </main>
     </div>

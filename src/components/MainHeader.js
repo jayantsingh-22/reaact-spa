@@ -8,14 +8,35 @@ const MainHeader = () => {
       <nav>
         <ul>
           <li>
-            <NavLink activeClassName={classes.active} to="/welcome">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `${classes.active}` : ""
+              }
+              to="/welcome"
+            >
               Welcome
             </NavLink>
           </li>
 
           <li>
-            <NavLink activeClassName={classes.active} to="/products">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `${classes.active}` : ""
+              }
+              to="/products"
+            >
               Products
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? `${classes.active}` : ""
+              }
+              to="/new-user"
+            >
+              New User?
             </NavLink>
           </li>
         </ul>
